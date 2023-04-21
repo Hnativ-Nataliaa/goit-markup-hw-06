@@ -800,25 +800,6 @@ text-decoration-line: underline;
 color: var(--color-iris);
 }
 /* * Modal btn bottom*/
-/* .modal-btn-sub{
-                background: var(--color-iris);
-                font-family: "Roboto", sans-serif;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.5;
-                letter-spacing: 0.04em;
-                color: var(--color-white);
-                cursor: pointer;
-                display: inline-block;
-                border: transparent;
-                padding: 16px 32px 16px 32px;
-                border-radius: 4px;
-                margin: auto;
-                transition-property: background-color;
-                transition-duration: 250ms;
-                transition-timing-function: var(--cubic);
-        } */
-
 
 .modal-btn-sub{
 font-family: 'Roboto';
@@ -826,7 +807,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-display: flex;
+display: block;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
@@ -838,7 +819,8 @@ color: var(--color-white);
 border: transparent;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-
+min-width: 169px;
+height: 56px;
 }
 .modal-btn-sub:hover {
 background-color: var(--color-ocean);
