@@ -751,6 +751,7 @@ line-height: 1.17;
 letter-spacing: 0.04em;
 display: flex;
 align-items: center;
+justify-content: center;
 fill: transparent;
 /* gap: 8px; */
 margin-top: 16px;
