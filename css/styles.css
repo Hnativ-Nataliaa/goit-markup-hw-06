@@ -742,9 +742,10 @@ border-color: var(--color-iris);
 
 /** Checkbox */
 
-/* .modal-field-check{
-display: flex;
-} */
+.modal-field-check{
+margin-top: 16px;
+margin-bottom: 24px;
+}
 .check-text{
 font-size: 12px;
 line-height: 1.17;
@@ -768,8 +769,6 @@ border-radius: 2px;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 16px;
-margin-bottom: 24px;
 cursor: pointer;
 }
 .input-check:checked + .check-text span{
@@ -799,5 +798,52 @@ line-height: 1.33;
 letter-spacing: 0.04em;
 text-decoration-line: underline;
 color: var(--color-iris);
+}
+/* * Modal btn bottom*/
+/* .modal-btn-sub{
+                background: var(--color-iris);
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                color: var(--color-white);
+                cursor: pointer;
+                display: inline-block;
+                border: transparent;
+                padding: 16px 32px 16px 32px;
+                border-radius: 4px;
+                margin: auto;
+                transition-property: background-color;
+                transition-duration: 250ms;
+                transition-timing-function: var(--cubic);
+        } */
 
+
+.modal-btn-sub{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+cursor: pointer;
+margin: auto;
+padding: 16px 32px;
+background-color:var(--color-iris);
+color: var(--color-white);
+border: transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+}
+.modal-btn-sub:hover {
+background-color: var(--color-ocean);
+}
+
+.modal-btn-sub:focus {
+background-color: var(--color-ocean);
 }
