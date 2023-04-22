@@ -650,6 +650,9 @@ border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 background-color: var(--color-cornflower);
 cursor: pointer;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
 .modal-btn:is(:hover, :focus){
 background-color: var(--color-ocean);
@@ -676,7 +679,6 @@ margin-bottom: 16px;
 .modal-form{
 width: 360px;
 margin: auto;
-/* padding: 24px; */
 }
 .modal-input{
 width: 100%;
@@ -685,6 +687,9 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 padding: 8px 16px 8px 38px;
 outline: transparent;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
 .modal-input:focus{
 border-color: var(--color-iris);
@@ -729,6 +734,9 @@ padding-top: 8px;
 padding-right: 16px;
 padding-bottom: 8px;
 display: block;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
 .modal-textarea::placeholder {
 font-size: 12px;
@@ -775,6 +783,9 @@ cursor: pointer;
 background-color: var(--color-ocean);
 border: none;
 fill: var(--color-cloud);
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
 .input-check:focus+.check-text span {
 border-color: var(--color-ocean);
@@ -854,6 +865,9 @@ border-radius: 4px;
 background: transparent;
 color: var(--color-white);
 padding: 8px 16px;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 
 }
 .footer-input::placeholder{
@@ -890,9 +904,14 @@ padding: 8px 24px;
 gap: 16px;
 border-radius: 4px;
 cursor: pointer;
-
-
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
-.footer-form-btn:focus{
+.footer-form-btn:hover{
 background-color: var(--color-ocean);
+}
+.footer-input-wrap{
+display: flex;
+gap: 24px;
 }
