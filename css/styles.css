@@ -419,7 +419,7 @@ fill: var(--color-ocean);
 fill: var(--color-ocean);
 }
 
-/* Footer */
+/**---------- Footer---------------- */
 
 .footer {
 background: var(--color-navy-blue);
@@ -822,11 +822,77 @@ border-radius: 4px;
 min-width: 169px;
 height: 56px;
 margin-bottom: 24px;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: var(--cubic);
 }
 .modal-btn-sub:hover {
 background-color: var(--color-ocean);
 }
 
 .modal-btn-sub:focus {
+background-color: var(--color-ocean);
+}
+/* *-------Footer-form------- */
+/* .footer-form{
+
+width: 452px;
+} */
+.footer-form-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-white);
+margin-bottom: 16px;
+}
+.footer-input{
+width: 264px;
+min-height: 40px;
+border: 1px solid #FFFFFF;
+border-radius: 4px;
+background: transparent;
+color: var(--color-white);
+padding: 8px 16px;
+
+}
+.footer-input::placeholder{
+font-weight: 400;
+font-size: 12px;
+line-height: 2.0;
+align-items: center;
+letter-spacing: 0.04em;
+color: var(--color-white);
+outline: transparent;
+}
+.footer-input:focus {
+border-color: var(--color-iris);
+}
+.footer-input-svg{
+width: 24px;
+height: 24px;
+}
+.footer-form-btn{
+display: inline-flex;
+font-family: 'Roboto';
+font-style: normal;
+background-color: var(--color-iris);
+border: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+justify-content: center;
+color: var(--color-white);
+padding: 8px 24px;
+gap: 16px;
+border-radius: 4px;
+cursor: pointer;
+
+
+}
+.footer-form-btn:focus{
 background-color: var(--color-ocean);
 }
